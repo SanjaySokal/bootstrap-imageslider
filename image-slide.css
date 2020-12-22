@@ -1,0 +1,80 @@
+.inline-image{
+    display: inline-block;
+    margin: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+.inline-image img{
+    float: right;
+    width: auto;
+}
+.left{
+    float: left;
+    display: block;
+    margin: 200px 0 auto 110px;
+    z-index: 1;
+}
+h1{
+    font-size: 70px;
+}
+.row a{
+    padding: 19px 50px 21px;
+    margin-top: 35px;
+    position: absolute;
+    border: 0.5px solid #000000;
+    color: #000 !important;
+}
+.row a:hover{
+    background-color: blueviolet;
+    text-decoration: none !important;
+    color: #fff !important;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: none;
+}
+.shake-image{
+    float: left;
+    left: 0;
+    width: 50px;
+    margin-right: 20px;
+    transition: all 0.1s linear;
+}
+.col-lg-3:hover .shake-image{
+    animation: shake 0.15s 3;
+}
+@keyframes shake{
+    0%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(0.2px, -0.2px) rotate(-5deg);
+    }
+    50%{
+        transform: translate(-0.2px, -0.2px) rotate(5deg);
+    }
+    75%{
+        transform: translate(0.2px, -0.2px) rotate(-5deg);
+    }
+    100%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+.carousel-control-prev , .carousel-control-next{
+    width: auto !important;
+    height: 20px !important;
+    top: 50% !important;
+    cursor: pointer;
+}
+.carousel-control-prev{
+    margin-left: 85px !important;
+}
+.carousel-control-next{
+    margin-right: 100px !important;
+}
+.row h6{
+    font-size: 24px;
+}
+.row h1{
+    font-size: 72px;
+}
